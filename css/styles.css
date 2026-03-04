@@ -1,0 +1,116 @@
+/*:root{--accent:#2d8f5b;--bg:#f6f7f8}
+*{box-sizing:border-box}body{font-family:Inter,Segoe UI,Arial,sans-serif;margin:0;background:var(--bg);color:#222}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:10px 0}
+.menu{list-style:none;margin:0;padding:0;display:flex;gap:16px}
+.menu a{text-decoration:none;color:#222}
+.menu-btn{display:none;background:none;border:0;font-size:20px}
+.hero{padding:48px 20px;background:linear-gradient(90deg,#fff, #f7fff8);border-radius:8px;margin-top:12px}
+.cards h3{margin-top:24px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
+.card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.card h4{margin:0 0 8px 0}
+.contact label{display:block;margin-bottom:10px}
+input,textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #ddd}
+button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+.site-footer{padding:20px;text-align:center;margin-top:20px}
+
+/* Responsive 
+@media (max-width:600px){
+  .menu{display:none;flex-direction:column;background:#fff;position:absolute;right:20px;top:60px;padding:12px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+  .menu-btn{display:block}
+}*/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gradiente principal */
+.gradient-bg {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+}
+
+/* Animación fade-in */
+.fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tarjetas de servicios */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Encabezado y navegación */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* Botones */
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Formulario */
+form input,
+form select,
+form textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #d1d5db;
+}
+
+footer a {
+    color: #60a5fa;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #3b82f6;
+}
+
+/* Responsividad extra */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+}
+
