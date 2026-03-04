@@ -1,0 +1,24 @@
+{
+  "name": "mi-sitio-backend",
+  "version": "1.0.0",
+  "description": "Backend simple para sitio estático: products API + contact form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Tu nombre",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^6.11.2",
+    "helmet": "^6.2.0",
+    "morgan": "^1.10.1",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

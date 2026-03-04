@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Cepillo de bambú", "price": 3.99, "desc": "Cepillo biodegradable." },
+  { "id": 2, "name": "Botella reutilizable", "price": 12.5, "desc": "Acero inoxidable 500ml." },
+  { "id": 3, "name": "Bolsas compostables", "price": 6.0, "desc": "Pack de 20 bolsas." }
+]
